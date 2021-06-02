@@ -81,12 +81,12 @@ function TopBar(props: Props) {
             </div>
 
             <UserMenu layout={userMenuLayout}/>
-            <div className='popup-container'>
+            {/* <div className='popup-container'>
             <Popup 
                 title={"Hey there!"}
                 message={"Welcome to Discord Bot Assistant"}
             />
-            </div>
+            </div> */}
  
             
         </div>
