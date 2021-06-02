@@ -6,7 +6,10 @@ function Build(props: Props) {
     const {} = props
 
     return (
-        <h1>Build</h1>
+        <main className='main'>
+            <h1>Build a bot</h1>
+        </main>
+    
     )
 }
 

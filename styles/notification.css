@@ -1,0 +1,113 @@
+.popup-box{
+    background-color: rosybrown;
+    background-color: #2c2c42e3;
+    border-radius: 15px;
+    position: relative;
+    max-width: 350px;
+    transition-duration: 0.4s;
+    max-height:300px;
+    margin-top: 20px;
+    padding: 20px;
+    animation: slideRightToLeft 0.8s forwards;
+}
+
+@keyframes slideRightToLeft {
+    from{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.popup-container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.popup-show{
+    
+}
+
+.popup-hide{
+    animation: hideDown 0.4s forwards;
+}
+
+@keyframes hideDown {
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+
+.popup-title{
+    font-weight: 100;
+    font-size: 24px;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.popup-title-text{
+    
+}
+.popup-close{
+  
+
+    padding: 3px;
+    margin-top: 10px;
+    background-color: #1d8cf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    cursor: pointer;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+}
+.popup-close:hover{
+    background-color: #1a6bbd;
+}
+.popup-message{
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup-actions{
+    padding: 10px;
+}
+
+.popup-btn-standard{
+    outline: none;
+    border: none;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #343c5a;
+    cursor: pointer;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.popup-btn-standard:hover{
+    background-color: #3e5fe6;  
+}
+
+.popup-actions{
+    text-align: center;
+}
+.popup-icon{
+    margin: 5px;
+}

@@ -2,14 +2,15 @@ import React from 'react'
 
 interface Props {}
 
-function Privacy_policy(props: Props) {
+function Assistant(props: Props) {
     const {} = props
 
     return (
         <main className='main'>
-            Privacy Policy
+             <h1>Assistant</h1>
         </main>
+       
     )
 }
 
-export default Privacy_policy
+export default Assistant

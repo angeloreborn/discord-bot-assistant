@@ -3,22 +3,8 @@ import {
 } from 'next-auth/client'
 
 export default function Home() {
-  const [ session, loading ] = useSession()
-  if(session) {
-    if (session.user)
-    {
-      return <>
-      Signed in as {session.user.email} <br/>
-      <button onClick={() => signOut()}>Sign out</button>
-      </>
-    }
-  }
-  return <>
-    Not signed in <br/>
-    <button onClick={() => signIn()}>Sign in</button>
+  return (
+  <main>
 
-
-    hello
-    
-  </>
+  </main>)
 }
