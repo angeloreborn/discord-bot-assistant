@@ -39,7 +39,7 @@ main{
 .test{
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  height: 100vh;
 }
 
 .logo{
