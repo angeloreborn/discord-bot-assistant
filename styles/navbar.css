@@ -138,6 +138,7 @@ aside{
     width: 300px;
     max-width: 500px;
     border-radius: 5px;
+    margin-left: 10px;
 }
 .top-icon{
     cursor: pointer;

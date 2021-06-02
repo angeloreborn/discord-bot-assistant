@@ -27,9 +27,8 @@
 }
 .popup-container{
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
-    height: 100vh;
     display: flex;
     align-items:flex-end;
     flex-direction: column-reverse;
