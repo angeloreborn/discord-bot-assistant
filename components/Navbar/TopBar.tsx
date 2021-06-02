@@ -31,6 +31,8 @@ function TopBar(props: Props) {
         window.addEventListener('resize',()=>{
             if (document.body.clientWidth > 600){
                 let g  = document.querySelector('main') as HTMLElement 
+                g.style.transitionDuration = '0.5s'
+                g.style.transitionTimingFunction = 'cubic-bezier(0.075, 0.82, 0.165, 1)'
                 g.style.transform = 'translateX(0)'
             }else{
                 let g  = document.querySelector('main') as HTMLElement 

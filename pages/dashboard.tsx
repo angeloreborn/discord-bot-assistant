@@ -1,7 +1,7 @@
 import React from 'react'
 import ValueCard from './../components/DashboardCards/ValueCard'
 import LargeCard from './../components/DashboardCards/LargeCard'
-
+import Loader from './../components/Loader/SeoCompliantLoader'
 interface Props {}
 
 function Dashboard(props: Props) {
@@ -17,7 +17,7 @@ function Dashboard(props: Props) {
             <ValueCard></ValueCard>
             <ValueCard></ValueCard>
         </div>
-       
+        <Loader/>
     </main>
        
     )

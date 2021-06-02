@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import '../styles/navbar.css'
 import '../styles/notification.css'
 import '../styles/dashboard.css'
+import '../styles/loader.css'
 import type { AppProps } from 'next/app'
 
 import SideNav from '../components/Navbar/NavBar'
