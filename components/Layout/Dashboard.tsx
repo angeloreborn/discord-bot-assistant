@@ -9,7 +9,7 @@ const style = {
 }
 function Dashboard(props: Props) {
     return (
-        <main className="test">
+        <main className='flex-content'>
              {props.children}
         </main>
     )
