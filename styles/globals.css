@@ -39,6 +39,7 @@ main{
 .test{
   display: flex;
   flex-direction: row;
+  height: 50vh;
 }
 
 .logo{
@@ -71,6 +72,7 @@ main{
 
 .content{
   width: 100%;
+  height: 50vh;
 }
 h1{
   margin: 0;
