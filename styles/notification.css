@@ -10,7 +10,11 @@
     padding: 20px;
     animation: slideRightToLeft 0.8s forwards;
 }
-
+@media only screen and (max-width: 350px) {
+    .popup-box{
+        width: calc(100vw - 50px) !important;
+    }
+}
 @keyframes slideRightToLeft {
     from{
         transform: translateX(150px);
@@ -25,8 +29,10 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    align-items:flex-end;
+    flex-direction: column-reverse;
 }
 .popup-show{
     
