@@ -11,6 +11,10 @@ aside{
 
 
 @media only screen and (max-width: 600px) {
+    .top-search{
+        width: 100% !important;
+        margin-left: 10px;
+    }
     .top-nav-toggle{
         margin-right: 0;
         width: 40px !important;
@@ -18,6 +22,7 @@ aside{
         transition-duration: 0.5s;
         transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
+
 }
 
 .line{
