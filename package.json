@@ -12,7 +12,7 @@
     "@types/node-sass": "^4.11.1",
     "@types/react-chartjs-2": "^2.5.7",
     "chart.js": "^3.3.2",
-    "next": "10.2.3",
+    "next": "^10.2.3",
     "next-auth": "^3.24.0",
     "react": "17.0.2",
     "react-chartjs-2": "^3.0.3",

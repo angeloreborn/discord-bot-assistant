@@ -1,13 +1,23 @@
-import React from 'react'
+import React, {useRef} from 'react'
 
-interface Props {}
+interface Props { 
+    loaded : boolean
+}
 
 function SeoCompliantLoader(props: Props) {
     const {} = props
+    const loader = useRef<any>()
 
+    if (props.loaded === true){
+        let container = loader.current as HTMLElement
+        container.classList.add('hide-right')
+    }
     return (
-        <div className='loader'>
+        <div ref={loader} className='loader'>
             <div className='loading-container'>
+                {/* <div className='loading-text'>
+                    Loading
+                </div> */}
                 <div className='animation-container'>
                     <div>
                         <div className='square1'></div>

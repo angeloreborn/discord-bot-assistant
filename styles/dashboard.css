@@ -9,6 +9,41 @@
     position: relative;
     box-sizing: border-box;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.value-card-right-column{
+    margin-left: auto;
+}
+
+.value-card-btn{
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #45456441;
+    color: rgb(207, 207, 207);
+    padding: 6px 10px 6px 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.value-card-btn:hover{
+    background: #5d5d85ab;
+}
+
+.value-card-title{
+    font-size: 16px;
+    font-weight: 100;
+}
+.value-card-value{
+    font-size: 30px;
+    font-weight: 100;
 }
 
 .large-card-container{

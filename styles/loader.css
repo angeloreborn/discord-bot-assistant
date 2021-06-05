@@ -17,7 +17,17 @@
   margin-right: auto;
   margin-bottom: 20%;
 }
+.hide-right{
+    pointer-events: none;
+    animation: hideRight 0.5s forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
+@keyframes hideRight {
+    to{
+        opacity: 0;
+    }
+}
 .animation-container{
     display: flex;
     flex-direction: row;
@@ -93,4 +103,11 @@
     .loader{
         width: 100vw;
     }
+}
+
+.loading-text{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #47476e;
+    font-weight: 100;
 }

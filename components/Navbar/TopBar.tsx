@@ -60,7 +60,7 @@ function TopBar(props: Props) {
         }
     }
     return (
-        <div className='top-bar'>
+        <header className='top-bar'>
                
             <div onClick={toggleMenuMobile} className='top-nav-toggle'>
                     <div className={l1}></div>
@@ -91,7 +91,7 @@ function TopBar(props: Props) {
             </div>
  
             
-        </div>
+        </header>
     )
 }
 

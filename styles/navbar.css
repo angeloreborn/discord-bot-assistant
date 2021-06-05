@@ -37,6 +37,7 @@ aside{
 }
 
 .menu-show{
+    pointer-events: all !important;
     animation: showMenu 1s forwards;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -54,6 +55,7 @@ aside{
 .menu-hidden-no-transition{
     opacity: 0;
     transform: translateY(-200px);
+    position: none;
 }
 .menu-hidden{
     pointer-events: none;
@@ -178,6 +180,7 @@ footer{
     justify-content: center;
     transition-duration: 1s;
     border-radius: 50%;
+    z-index: 5;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .top-right-menu:hover{
@@ -212,9 +215,9 @@ footer{
     right: 15px;
     top: 60px;
     margin: 6px;
-    z-index: 5;
+    z-index: 4;
     opacity: 0;
-
+    pointer-events: none;
 }
 
 .seperator{

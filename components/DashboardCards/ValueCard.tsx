@@ -7,7 +7,13 @@ function ValueCard(props: Props) {
 
     return (
         <div className='value-card-container'>
-            asf
+            <div>Image</div>
+            <div className='value-card-right-column'>
+                <div className='value-card-title'>Acive Bots</div>
+                <div className='value-card-value'>615 000</div>
+            </div>
+            <div className='seperator'></div>
+            <div className='value-card-btn'>View</div>
         </div>
     )
 }

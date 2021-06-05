@@ -12,11 +12,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
   <Dashboard>
     <SideNav />
-    <div className='content'>
+    <section className='content-viewport-width'>
       <TopBar></TopBar>
      <Component {...pageProps} />
-    </div>
-
+    </section>
   </Dashboard>
   )
 }
