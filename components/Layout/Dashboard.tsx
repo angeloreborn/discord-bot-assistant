@@ -9,9 +9,9 @@ const style = {
 }
 function Dashboard(props: Props) {
     return (
-        <main className='flex-content'>
+        <section>
              {props.children}
-        </main>
+        </section>
     )
 }
 

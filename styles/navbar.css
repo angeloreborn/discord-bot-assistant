@@ -1,13 +1,19 @@
 aside{
+
+    flex-shrink: 0;
+}
+
+.side-nav{
     background: linear-gradient(0deg,#3358f4,#1d8cf8);
-    height: calc(100vh);
     width: 260px;
     display: flex;
     flex-direction: column;
+    overflow: auto;
     align-items: center;
     z-index: 5;
-    flex-shrink: 0;
-}
+    height: 100%;
+  }
+
 
 
 @media only screen and (max-width: 600px) {
@@ -220,9 +226,6 @@ footer{
     pointer-events: none;
 }
 
-.seperator{
-    border-bottom: 1px #434363 solid;
-}
 .user-menu-icon{
 
 }

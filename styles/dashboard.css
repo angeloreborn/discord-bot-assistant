@@ -93,6 +93,8 @@
 .dash-flex{
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    overflow: auto !important;
 }
 
 .card-flex-row{

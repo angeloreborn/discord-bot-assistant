@@ -9,7 +9,7 @@ function SideNav(props: Props) {
     const { } = props
 
     return (
-        <aside>
+        <div className='side-nav'>
             <Logo />
             <NavItem to="/dashboard" title='Dashboard' icon='/dashboard.svg' /> 
             <NavItem  to="/assistant"  title='Assistant' icon='/assistant.svg' />
@@ -28,7 +28,7 @@ function SideNav(props: Props) {
                 </div>
             </div>
             <footer> <small>&copy; Copyright 2021, Discord Bot Assistant</small> </footer>
-        </aside>
+        </div>
     )
 }
 
