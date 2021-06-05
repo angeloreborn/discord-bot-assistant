@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 interface Props {
     layout: any
 }
@@ -9,6 +10,7 @@ function UserMenu(props: Props) {
 
     return (
         <div className={`user-menu ${props.layout}`}>
+            <Link href='/guest/account'>        
             <div className='user-menu-flex'>
                 <div className='user-menu-icon'>
                     <Image width="20px" height="20px" src='/user.svg' />
@@ -17,14 +19,18 @@ function UserMenu(props: Props) {
                     Account
                </div>
             </div>
+            </Link>
+
+            <Link href='/guest/notifications'>
             <div className='user-menu-flex'>
                 <div className='user-menu-icon'>
                     <Image width="20px" height="20px" src='/user.svg' />
                 </div>
                 <div className='user-menu-label'>
-                    Alerts
+                    Notifications
                </div>
             </div>
+            </Link>
             <div className='seperator'></div>
             <div className='user-menu-flex'>
                 <div className='user-menu-icon'>

@@ -61,11 +61,11 @@ a {
   padding-left: 14px;
   color: rgb(207, 207, 207);
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   transition-duration: 0.5s;
   position: relative;
   z-index: 3;
-  height: 100vh;
+  height: calc(100vh - 70px);
   transform: translateX(0);
 }
 

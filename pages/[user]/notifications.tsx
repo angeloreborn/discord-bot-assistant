@@ -2,14 +2,14 @@ import React from 'react'
 
 interface Props {}
 
-function Profile(props: Props) {
+function Notifications(props: Props) {
     const {} = props
 
     return (
         <main className='main'>
-            Developer portal
+            Notifcations
         </main> 
     )
 }
 
-export default Profile
+export default Notifications

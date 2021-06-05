@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import NavItem from './NavItem'
 import Link from 'next/link'
+
 interface Props { }
 
 function SideNav(props: Props) {
