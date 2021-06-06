@@ -15,9 +15,6 @@ function SeoCompliantLoader(props: Props) {
     return (
         <div ref={loader} className='loader'>
             <div className='loading-container'>
-                {/* <div className='loading-text'>
-                    Loading
-                </div> */}
                 <div className='animation-container'>
                     <div>
                         <div className='square1'></div>
@@ -28,7 +25,6 @@ function SeoCompliantLoader(props: Props) {
                         <div className='square4'></div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

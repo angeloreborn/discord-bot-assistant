@@ -28,11 +28,12 @@ function LargeCard(props: Props) {
       };
 
     return (
-        <div className='large-card-container'>
-            <h1>Activity over time</h1>
+        <div className='large-card-container padding-large border-radius-small dark-shadow'>
             <Line style={{
-                maxHeight:'40vh'
-            }} className='chart-large' data={data} type='line'/>
+                maxHeight:'40vh',
+                transitionDuration:'0s'
+                
+            }} data={data} type='line'/>
         </div>
     )
 }

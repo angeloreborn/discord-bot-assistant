@@ -12,16 +12,9 @@ function Logo(props: Props) {
         color: 'rgb(240,240,240)'
     }
     return (
-        <div className='logo'>
-            <div className='logo-text'>
-                <div className='logo-img'>
-                   
-                </div>
-                <div>
-                    <h1 className='logo-main-text'>Discord</h1>
-                    <h1 className='logo-sub-text'>Bot Assistance</h1>
-                </div>
-            </div>
+        <div className='padding-medium'>
+            <h1 className='font-weight-400 font-size-large'>Discord</h1>
+            <h1 className='font-weight-100 font-size-small'>Bot Assistance</h1>
         </div>
 
     )

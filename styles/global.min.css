@@ -1,0 +1,299 @@
+/* Global */
+html,
+body {
+  overflow: hidden;
+  transition-duration: 0.5s;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(#1e1e2f,#1e1e24);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.application-main{
+    width: 100%;
+}
+
+
+
+
+*{
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+    padding: 0;
+}
+
+a{ 
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    font-weight: 100; 
+}
+   
+/* Flex Styling */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{ display: flex }
+    
+.flex-align-center{ align-items: center}
+.flex-justify-center {justify-content: center}
+.flex-no-shrink{ flex-shrink: 0 }
+.flex-wrap{flex-wrap: wrap}
+
+/* Dimension Specifications */
+.height-100{ height: 100% }
+    
+/* Perspective Depths*/
+.z1{ z-index: 1 } .z2{ z-index: 2 } 
+.z3{ z-index: 3 } .z4{ z-index: 4 } 
+.z5{ z-index: 5 } .z6{ z-index: 6 } 
+.z7{ z-index: 7 } .z8{ z-index: 8 } 
+ 
+/* Scroll Attributes */
+.auto-overflow-y{ overflow-y: auto }
+    
+
+   
+/* Font Styling */
+.font-weight-100{
+    font-weight: 100;
+}
+.font-weight-400{
+    font-weight: 100;
+}
+
+.font-size-large{
+    font-size: 28px;
+}
+.font-size-small{
+    font-size: 16px;
+}
+
+/* Margin Specifications */
+.margin-medium{
+    margin: 10px;
+}
+.margin-top-auto{margin-top: auto}
+.margin-left-auto{margin-left: auto}
+
+.margin-large{ margin: 15px }
+.margin-medium{ margin: 10px }
+.margin-small{ margin: 5px }
+
+.margin-left-large{ margin-left: 15px }
+.margin-right-large{ margin-right: 15px }
+.margin-top-large{ margin-top: 15px }
+.margin-bottom-large{ margin-bottom: 15px }
+
+.margin-left-medium{ margin-left: 10px }
+.margin-right-medium{ margin-right: 10px }
+.margin-top-medium{ margin-top: 10px }
+.margin-bottom-medium{ margin-bottom: 10px }
+
+.margin-left-small{ margin-left: 5px }
+.margin-right-small{ margin-right: 5px }
+.margin-top-small{ margin-top: 5px }
+.margin-bottom-small{ margin-bottom: 5px }
+
+/* Padding Specifications */
+.padding-large{ padding: 15px}
+.padding-medium{ padding: 10px }
+.padding-small{ padding: 5px }
+
+.padding-left-large{ padding-left: 15px }
+.padding-right-large{ padding-right: 15px }
+.padding-top-large{ padding-top: 15px }
+.padding-bottom-large{ padding-bottom: 15px }
+
+.padding-left-medium{ padding-left: 10px }
+.padding-right-medium{ padding-right: 10px }
+.padding-top-medium{ padding-top: 10px }
+.padding-bottom-medium{ padding-bottom: 10px }
+
+.padding-left-small{ padding-left: 5px }
+.padding-right-small{ padding-right: 5px }
+.padding-top-small{ padding-top: 5px }
+.padding-bottom-small{ padding-bottom: 5px }
+
+/* Border Radius */
+.border-radius-large{ border-radius: 15px }
+.border-radius-medium{ border-radius: 10px }
+.border-radius-small{ border-radius: 5px }
+
+.border-radius-round{border-radius: 50%}
+
+/* Animation/Transition Specifications */
+.transition-duration-fast{ transition-duration: 0.3s }
+.transition-duration-normal{ transition-duration: 0.5s }
+
+/* Miscellanious */
+.pointable{ cursor: pointer }
+.text-align-center {text-align: center}
+.text-align-right {text-align: right} 
+
+
+.outline-none{ outline: none }
+.border-none { border: none }
+
+/* Position */
+.fixed{ position: fixed }
+.relative { position: relative }
+
+/* =======================UNIQUE STYLES========================
+=============================================================== */
+
+.content{
+    color: rgb(187, 187, 187);
+    overflow: auto;
+    height: calc(100% - 75px);
+}
+
+/* Side Bar */
+aside{
+    background: linear-gradient(0deg,#3358f4,#1d8cf8);
+    color: rgb(207, 207, 207);
+    width: 260px;
+}
+
+/* Navigation Item */
+.nav-item{
+    background:  #192968;
+    width: 60%;
+}
+.nav-item:hover{
+    background: #071038
+}
+
+/* Header */
+header{
+}
+
+/* Form Elements */
+input{
+    background-color: #2c2c42;
+    color: rgb(207, 207, 207);
+}
+
+/* Top Search Bar */
+.top-search{
+    background-color: #2c2c42;
+}
+
+/* Seperators and Page breaks */
+.seperator-dark{border-bottom: 1px #434363 solid}
+.seperator-light{border-bottom: 1px #9191bd solid}
+    
+/* Kebab Menu Dot */
+.dot{
+    background-color: rgb(206, 206, 206);
+    width: 6px;
+    height: 6px;
+    margin: 2px;
+}
+
+
+.top-right-menu{
+    width: 50px;
+
+}
+
+.top-right-menu:hover{
+    background-color: #2c2c42;
+    
+}
+
+.user-menu{
+    background: linear-gradient(0deg,#33334d,#494969);
+    color: rgb(207, 207, 207);;
+    width: 175px;
+    right: 10px;
+    top: 60px;
+}
+
+.user-menu-link:hover{
+    background-color: #5e5e80;
+}
+
+/* Dashboard Card Container - Value*/
+.value-card-container{
+    background-color: #2c2c42;
+    background: linear-gradient(0deg,#2d2d44,#2c2c42);
+    flex: 0 0 25%;
+    max-width: calc(25% - 33px);
+    box-sizing: border-box;
+    margin: 15px 15px 15px 15px;
+}
+
+.dark-shadow{
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.096);
+}
+
+
+
+.value-card-btn{  
+    background: #45456441;
+}
+
+.value-card-btn:hover{
+    background: #5d5d85ab;
+}
+
+.value-card-title{
+    font-size: 16px;
+    font-weight: 100;
+}
+.value-card-value{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+/* Dashboard Card Container - Graph*/
+.large-card-container{
+    margin: 15px 15px 15px 15px;
+    background: linear-gradient(0deg,#2d2d44,#2c2c42);
+    flex: 0 0 100%;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+/*=======================MEDIA QUERIES========================
+=============================================================== */
+
+
+@media only screen and (max-width: 1200px) {
+    .value-card-container{
+        flex: 0 0 50%;
+        max-width: calc(50% - 35px);
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .value-card-container{
+        flex: 0 0 100%;
+        max-width: calc(100% - 40px);
+    }
+    .large-card-container{
+        max-width: calc(100% - 40px);
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .value-card-container{
+        flex: 0 0 100%;
+        max-width: calc(100% - 40px);
+    }
+    .large-card-container{
+        max-width: calc(100% - 40px);
+    }
+
+    body{
+        width: calc(100% + 250px);
+        transform: translateX(-250px);
+    }
+}

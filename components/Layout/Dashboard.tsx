@@ -1,17 +1,20 @@
 import React from 'react'
 
 interface Props {
-    children : any
+    title : string,
+    children? : any[],
 }
 
-const style = {
-    
-}
 function Dashboard(props: Props) {
+    const {title, children} = props
+
     return (
-        <section>
-             {props.children}
-        </section>
+        <main className='relative'>
+            {/* <h1 className='padding-left-medium'>{title}</h1> */}
+            <div className='flex-row flex-wrap relative'>
+                {children}
+            </div>
+        </main>
     )
 }
 

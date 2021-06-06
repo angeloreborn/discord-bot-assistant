@@ -18,7 +18,18 @@ function NavItem(props: Props) {
 
     return (
         <Link href={props.to}>
-            <div onClick={hideOnMobile} className='nav-item'>
+            <div 
+            className='nav-item 
+                       flex-column 
+                       flex-align-center
+                       padding-top-medium
+                       padding-bottom-medium
+                       margin-small
+                       border-radius-medium
+                       font-weight-100
+                       pointable
+                       transition-duration-fast' 
+                       onClick={hideOnMobile} >
                 <div>
                     <Image width="50px" height="50px" src={props.icon}></Image>
                 </div>
