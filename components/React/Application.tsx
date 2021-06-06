@@ -10,7 +10,7 @@ interface Props {
 
 const applicationStyle = {
     display: 'flex',
-    height: '100%'
+    height: '100%',
 }
 const mainStyle = {
     width: '100%',
@@ -25,7 +25,7 @@ function Application(props: Props) {
     })
 
     return (
-        <div style={applicationStyle}>
+        <div className='application' style={applicationStyle}>
             {props.SideComponent}
             <div className='application-main'>
             {props.HeadComponent}

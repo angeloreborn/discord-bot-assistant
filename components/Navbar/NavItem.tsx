@@ -5,17 +5,15 @@ interface Props {
     title: string,
     icon: string,
     to: string,
-}
-function hideOnMobile() {
-    console.log(window.innerWidth)
-    if (window.innerWidth <= 600) {
-        let main_content = document.querySelector('main') as HTMLElement
-        main_content.style.transform = 'translateX(-250px)';
-    }
-}
-function NavItem(props: Props) {
-    const { } = props
 
+}
+
+function NavItem(props: Props) {
+   
+
+    function hideOnMobile() {
+      
+    }
     return (
         <Link href={props.to}>
             <div 
