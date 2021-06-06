@@ -16,14 +16,9 @@ import {useState} from 'react'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
-  const [hideMenu, setHideMenu] = useState(false)
-  function hideNav(){
-    console.log('hiding navingation')
-    setHideMenu(true)
-  }
   return (  <Application
-    SideComponent={ <SideNav onNavClick={hideNav}/> }
-    HeadComponent={ <TopBar hideNav={hideMenu} setHideNav={setHideMenu}/> }
+    SideComponent={ <SideNav/> }
+    HeadComponent={ <TopBar /> }
     MainComponent={ <Component {...pageProps} />} /> )
 }
 
