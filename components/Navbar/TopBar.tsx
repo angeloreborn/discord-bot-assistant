@@ -16,7 +16,7 @@ function TopBar(props: Props) {
     const [sideMenuVisible, setSideMenuVisible] = useState(false)
     const [currentRoute, setCurrentRoute] = useState<string>();
     const [isMobile, setIsMobile] = useState(false);
-
+    const [screen, setScreen] = useState(false)
     const route = useRouter()
 
     const [readyState, setReadyState] = useState(false);
@@ -43,12 +43,8 @@ function TopBar(props: Props) {
 
     const [menuStyle, setMenuStyle] = useState<any>(menuStyleHidden);
 
-
-
-
-
-
     function toggleUserMenu() {
+        
         if (userMenuVisible === true) {
             setMenuStyle(menuStyleHidden)
             if (userMenuIcon.current)
@@ -73,19 +69,22 @@ function TopBar(props: Props) {
                 setIsMobile(false)
             }
         })
-        // Initalize current route
-        setCurrentRoute(route.pathname)
-        setReadyState(true)
-        let mainWindow = document.querySelector('main');
 
-        mainWindow?.addEventListener('click', () => {
-            if (window.innerWidth <= 600) {
-                showSideMenu(false)
+        document.addEventListener('readystatechange',()=>{
+            if (document.readyState === 'complete'){
+                if (window.innerWidth <= 600){
+                    showSideMenu(false)
+                    setCurrentRoute(route.pathname)
+                    setIsMobile(true)
+                }else{
+                    setIsMobile(false)
+                }
             }
         })
-        window.addEventListener('click', (e: any) => {
+        setReadyState(true)
+        
 
-        })
+ 
     })
 
     function showSideMenu(show: boolean, mobile?: boolean) {
@@ -94,7 +93,7 @@ function TopBar(props: Props) {
         let second_line = line2.current as HTMLElement
         let third_line = line3.current as HTMLElement
         let body = document.querySelector('.application') as HTMLElement;
-
+        console.log(show)
         if (show === true) {
             setSideMenuVisible(true)
             first_line.style.transform = 'translateY(10px) rotate(45deg) '
@@ -128,11 +127,11 @@ function TopBar(props: Props) {
 
     function toggleSideMenu() {
         if (sideMenuVisible === false) {
-            showSideMenu(true)
-            setSideMenuVisible(true)
+            showSideMenu(true, true)
+            //setSideMenuVisible(true)
         } else {
             showSideMenu(false)
-            setSideMenuVisible(false)
+           // setSideMenuVisible(false)
         }
     }
 
