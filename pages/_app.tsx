@@ -22,8 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     let interval = setInterval(() => {
-      if (document.readyState === 'complete') {
-       
+      if (document.readyState === 'complete') {   
         clearInterval(interval)
         setTimeout(() => {
           setLoaded(true)
