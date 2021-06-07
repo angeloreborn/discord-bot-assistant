@@ -12,6 +12,20 @@
 
 }
 
+.loader-full{
+    position: fixed;
+    background: linear-gradient(#1e1e2f,#1e1e24);
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .loading-container{
   margin-left: auto;

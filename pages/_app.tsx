@@ -12,14 +12,36 @@ import SideNav from '../components/Navbar/NavBar'
 import TopBar from './../components/Navbar/TopBar'
 
 import Application from '../components/React/Application'
-import {useState} from 'react'
+import { useState, useEffect } from 'react'
+
+import PageLoader from '../components/Loader/PageLoader'
+
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [loaded, setLoaded] = useState(false)
 
-  return (  <Application
-    SideComponent={ <SideNav/> }
-    HeadComponent={ <TopBar /> }
-    MainComponent={ <Component {...pageProps} />} /> )
+  useEffect(() => {
+    let interval = setInterval(() => {
+      if (document.readyState === 'complete') {
+       
+        clearInterval(interval)
+        setTimeout(() => {
+          setLoaded(true)
+        }, 2000);
+        
+      }
+    }, 1)
+  }, [])
+
+return (<>
+  <Application
+    SideComponent={<SideNav />}
+    HeadComponent={<TopBar />}
+    MainComponent={<Component {...pageProps} />}>
+  </Application>
+  <PageLoader loaded={loaded} />
+</>
+)
 }
 
 export default MyApp

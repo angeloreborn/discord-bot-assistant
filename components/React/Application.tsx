@@ -4,6 +4,7 @@ interface Props {
     SideComponent : any,
     MainComponent : any,
     HeadComponent : any,
+    children: any,
 }
 
 // Applacation layers components horizontally
@@ -28,6 +29,7 @@ function Application(props: Props) {
                 </div>
                
             </div>
+            {props.children}
         </div>
     )
 }
