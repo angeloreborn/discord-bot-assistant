@@ -18,12 +18,6 @@ const mainStyle = {
 
 function Application(props: Props) {
     const {} = props
-    
-    useEffect(()=>{
-        let next_div = document.getElementById('__next') as HTMLElement
-        next_div.style.height = '100%';
-    })
-
     return (
         <div className='application' style={applicationStyle}>
             {props.SideComponent}

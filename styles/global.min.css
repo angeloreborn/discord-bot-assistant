@@ -10,6 +10,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+body:only-child{
+
+}
 .application-main{
     width: 100%;
 }
@@ -19,6 +23,10 @@ html{
 }
 main{
     overflow-x: hidden !important;
+}
+
+#__next {
+    height: 100%;
 }
 
 .application{
