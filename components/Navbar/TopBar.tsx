@@ -16,13 +16,11 @@ function TopBar(props: Props) {
     const [sideMenuVisible, setSideMenuVisible] = useState(false)
     const [currentRoute, setCurrentRoute] = useState<string>();
     const [isMobile, setIsMobile] = useState(false);
-    const [screen, setScreen] = useState(false)
     const route = useRouter()
 
     const [readyState, setReadyState] = useState(false);
 
     if (currentRoute != route.pathname && isMobile === true) {
-        console.log('navigated')
         showSideMenu(false)
         setCurrentRoute(route.pathname)
     }
@@ -58,42 +56,33 @@ function TopBar(props: Props) {
         }
     }
 
-    // Listen for screen changes
     useEffect(() => {
-        window.addEventListener('resize', () => {
-            if (window.innerWidth <= 600) {
+        onMount()
+    },[])
+
+    function onMount(){
+        if (document.body.clientWidth <= 600){
+            setIsMobile(true)
+            showSideMenu(false)
+        }
+        window.addEventListener('resize', ()=>{
+            if (document.body.clientWidth <= 600){
                 showSideMenu(false)
                 setIsMobile(true)
-            } else {
+            }else{
                 showSideMenu(true)
                 setIsMobile(false)
             }
         })
 
-        document.addEventListener('readystatechange',()=>{
-            if (document.readyState === 'complete'){
-                if (window.innerWidth <= 600){
-                    showSideMenu(false)
-                    setCurrentRoute(route.pathname)
-                    setIsMobile(true)
-                }else{
-                    setIsMobile(false)
-                }
-            }
-        })
-        setReadyState(true)
-        
-
- 
-    })
+    }
 
     function showSideMenu(show: boolean, mobile?: boolean) {
-        if (readyState != true) return
+        
         let first_line = line1.current as HTMLElement
         let second_line = line2.current as HTMLElement
         let third_line = line3.current as HTMLElement
         let body = document.querySelector('.application') as HTMLElement;
-        console.log(show)
         if (show === true) {
             setSideMenuVisible(true)
             first_line.style.transform = 'translateY(10px) rotate(45deg) '
@@ -128,10 +117,8 @@ function TopBar(props: Props) {
     function toggleSideMenu() {
         if (sideMenuVisible === false) {
             showSideMenu(true, true)
-            //setSideMenuVisible(true)
         } else {
             showSideMenu(false)
-           // setSideMenuVisible(false)
         }
     }
 
