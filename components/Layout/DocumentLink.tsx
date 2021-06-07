@@ -11,11 +11,9 @@ function DocumentLink(props: Props) {
     const {} = props
 
     return (
-            <div className='nav-link'>
                 <Link href={props.to}>
-                    <a>{props.title}</a>
+                    <a className='nav-link width-100 padding-small pointable'>{props.title}</a>
                 </Link>
-            </div>
     )
 }
 

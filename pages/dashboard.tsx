@@ -23,16 +23,7 @@ function Dashboard(props: Props) {
             <ValueCard/>
             <LargeCard/>
             <Loader loaded={loaded}/>
-        </Dash>
-      
-    // <main className='main'>
-    //     <h1 className='main-title'>Dashboard</h1>
-    //     <div className='dash-flex'>
-
-    //     </div>
-    //     
-    // </main>
-       
+        </Dash>      
     )
 }
 

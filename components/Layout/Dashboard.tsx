@@ -2,7 +2,7 @@ import React from 'react'
 
 interface Props {
     title : string,
-    children? : any[],
+    children? : any,
 }
 
 function Dashboard(props: Props) {
@@ -10,7 +10,7 @@ function Dashboard(props: Props) {
 
     return (
         <main className='relative'>
-            {/* <h1 className='padding-left-medium'>{title}</h1> */}
+            <h1 className='padding-left-large'>{title}</h1>
             <div className='flex-row flex-wrap relative'>
                 {children}
             </div>

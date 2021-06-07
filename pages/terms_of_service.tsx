@@ -1,12 +1,14 @@
 import React from 'react'
-
+import Dashboard from '../components/Layout/Dashboard'
 interface Props {}
 
 function Terms_of_service(props: Props) {
     const {} = props
 
     return (
-        <h1>Terms of Service</h1>
+        <Dashboard title='Terms of service'>
+
+        </Dashboard>
     )
 }
 

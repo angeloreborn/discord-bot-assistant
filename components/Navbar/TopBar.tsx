@@ -123,7 +123,7 @@ function TopBar(props: Props) {
     }
 
     return (
-        <header className='flex-row padding-top-small'>
+        <header className='flex-row padding-top-small relative z6'>
             <div onClick={toggleSideMenu} className='top-left-menu
                             flex-column 
                             flex-justify-center     

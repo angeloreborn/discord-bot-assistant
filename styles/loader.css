@@ -2,7 +2,7 @@
     position: fixed;
     background: linear-gradient(#1e1e2f,#1e1e24);
     width: calc(100% - 260px);
-    height: calc(100% - 75px);
+    height: calc(100%);
     bottom: 0;
     right: 0;
     z-index: 5;

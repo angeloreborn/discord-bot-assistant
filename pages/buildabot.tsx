@@ -1,20 +1,15 @@
 import React, {useState} from 'react'
 import Loader from '../components/Loader/SeoCompliantLoader'
+import Dashboard from '../components/Layout/Dashboard'
 interface Props {}
 
 function Build(props: Props) {
     const {} = props
-    const [loaded, setLoaded] = useState(false);
 
-    setTimeout(() => {
-        setLoaded(true)
-    }, 1000);
     return (
-        <main className='main'>
-            <h1>Build a bot</h1>
-            <Loader loaded={loaded}/>
-        </main>
-    
+        <Dashboard title='Build a bot'>
+
+        </Dashboard>
     )
 }
 

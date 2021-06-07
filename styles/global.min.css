@@ -27,6 +27,7 @@ main{
 
 #__next {
     height: 100%;
+
 }
 
 .application{
@@ -74,7 +75,7 @@ a{
  
 /* Scroll Attributes */
 .auto-overflow-y{ overflow-y: auto }
-    
+.overflow-auto{overflow: auto}
 
    
 /* Font Styling */
@@ -196,6 +197,10 @@ aside{
 .nav-item:hover{
     background: #071038
 }
+
+
+
+
 
 /* Header */
 header{

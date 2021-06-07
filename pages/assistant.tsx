@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import Loader from './../components/Loader/SeoCompliantLoader'
+import Dashboard from '../components/Layout/Dashboard'
+
 interface Props {}
 
 function Assistant(props: Props) {
@@ -11,11 +13,9 @@ function Assistant(props: Props) {
     }, 1000);
 
     return (
-        <main className='main'>
-             <div className='viewport-content-width'></div>
-             <h1>Assistant</h1>
+        <Dashboard title='Assistant'>
              <Loader loaded={loaded}/>
-        </main>
+        </Dashboard>
        
     )
 }
