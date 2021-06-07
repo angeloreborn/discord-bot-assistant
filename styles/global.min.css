@@ -170,6 +170,15 @@ a{
 }
 
 
+/* Button Styles */
+.btn-join{
+    background: #248ca7;
+}
+.btn-join:hover{
+    background: #1c5585;
+}
+
+
 
 
 /* =======================UNIQUE STYLES========================
@@ -268,6 +277,14 @@ input{
     margin: 15px 15px 15px 15px;
 }
 
+.alert-bar-container {
+    background: linear-gradient(0deg,#3a2d44,#392c42);
+    flex: 0 0 100%;
+    max-width: calc(100% - 33px);
+    box-sizing: border-box;
+    margin: 15px 15px 15px 15px;
+}
+
 .value-card-btn{  
     background: #45456441;
 }
@@ -307,6 +324,11 @@ input{
     align-self: flex-start;
 }
 
+/* Image Sizing */
+.image-small{
+    width: 40px;
+    height: 30px;
+}
 
 /*=======================MEDIA QUERIES========================
 =============================================================== */

@@ -17,10 +17,10 @@ function Dashboard(props: Props) {
     }, 1000);
     return (
         <Dash title='Dashboard'>
-            <ValueCard/>
-            <ValueCard/>
-            <ValueCard/>
-            <ValueCard/>
+            <ValueCard title='Bot Projects' value='8'/>
+            <ValueCard title='Hosted Bots' value='2'/>
+            <ValueCard title='Users Assisted' value='10'/>
+            <ValueCard title='Notifications' value='15'/>
             <LargeCard/>
             <Loader loaded={loaded}/>
         </Dash>      

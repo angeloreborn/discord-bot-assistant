@@ -1,9 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-interface Props {}
+interface Props {
+    title? : string,
+    value?: string,
+    background? : string,
+}
 
 function ValueCard(props: Props) {
-    const {} = props
+    const {title, value} = props
 
     return (
         <div className='value-card-container 
@@ -11,14 +15,16 @@ function ValueCard(props: Props) {
                         padding-large
                         border-radius-small
                         dark-shadow'             
-                        >
+                        style={{
+                            background:props.background
+                        }}>
            
             <div className='flex-column'>
                  <div className='flex-row'>
                     <div>Image</div>
                     <div className='margin-left-auto text-align-right'>
-                        <div className='value-card-title'>Acive Bots</div>
-                        <div className='value-card-value'>615 000</div>
+                        <div className='value-card-title'>{title}</div>
+                        <div className='value-card-value'>{value}</div>
                     </div>
                  </div>
             </div>
